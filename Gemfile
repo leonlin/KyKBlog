@@ -1,11 +1,15 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.3'
+gem 'bootstrap-sass', '2.0.0'
+gem 'bcrypt-ruby'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+gem 'mysql2'
 
 
 # Gems used only for assets and not required
