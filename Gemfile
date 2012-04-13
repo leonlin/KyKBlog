@@ -5,6 +5,9 @@ gem 'bootstrap-sass', '2.0.0'
 gem 'bcrypt-ruby'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
+gem "friendly_id"
+gem 'wmd-rails'
+gem 'formatize'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

@@ -1,7 +1,10 @@
 class User < ActiveRecord::Base
+  extend FriendlyId
+  friendly_id :name, use: :slugged
   attr_accessible :email, :name, :password, :password_confirmation
   has_secure_password
   has_many :microposts, dependent: :destroy
+  has_many :posts, dependent: :destroy
   before_save :create_remember_token
 
   validates :name,  presence: true, length: { maximum: 50 }
@@ -13,7 +16,8 @@ class User < ActiveRecord::Base
 
   def feed
     # This is preliminary. See "Following users" for the full implementation.
-    Micropost.where("user_id = ?", id)
+    #Micropost.where("user_id = ?", id)
+    Post.where("user_id = ?", id)
   end
 
   private

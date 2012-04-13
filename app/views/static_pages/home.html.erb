@@ -1,32 +1,31 @@
 <% provide(:title, 'Home') %>
 <% if signed_in? %>
   <div class="row">
-    <aside class="span4">
+    <aside class="span3">
     <section>
     <%= render 'shared/user_info' %>
     </section>
     <section>
-    <%= render 'shared/micropost_form' %>
-    </section>
+    <%= link_to "New Post", new_post_path %>
     </aside>
-    <div class="span8">
-      <h3>Micropost Feed</h3>
+    <div class="span9">
+      <h3>Post Feed</h3>
       <%= render 'shared/feed' %>
     </div>
   </div>  
 <% else %>
-  <div class="center hero-unit">
-    <h1>Welcome to the Sample App</h1>
-
-    <h2>
-      This is the home page for the
-      <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
-      sample application.
-    </h2>
-
-    <%= link_to "Sign up now!", signup_path, 
-      class: "btn btn-large btn-primary" %>
+  <div class="row">
+    <aside class="center span3">
+    <h1>kyk Blog</h1>
+    <section>
+      <%= link_to "Sign up now!", signup_path, 
+        class: "btn btn-large btn-primary" %>
+    </section>
+    </aside>
+    <div class="span9">
+      <h3>Post Feed</h3>
+      <%= render 'shared/feed' %>
+    </div>
   </div>
 
-  <%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
 <% end %>
