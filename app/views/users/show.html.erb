@@ -7,7 +7,12 @@
     <%= @user.name %>
   </h1>
   </section>
-  <%= link_to "New Post", new_post_path %>
+  <% if current_user? @user %>
+  <section>
+  <%= link_to "New Post", new_post_path,
+    class: "btn btn-large btn-primary" %>
+  </section>
+  <% end %>
   </aside>
   <div class="span9">
     <% if @user.posts.any? %>

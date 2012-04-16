@@ -1,13 +1,15 @@
 <li>
-<span class="title"><%= post.title %></span>
+<h3 class="title">
+  <%= link_to post.title, post_path(post) %>
+</h3>
 <span class="timestamp">
   Posted <%= time_ago_in_words(post.created_at) %> ago.
 </span>
-<span class="content"><%= markdown(post.content) %></span>
 <% if current_user?(post.user) %>
   <%= link_to "delete", post, method:  :delete,
     confirm: "You sure?",
     title:   post.title %>
   <%= link_to "edit", edit_post_path(post) %>
 <% end %>
+<div class="content"><%= markdown(post.content) %></div>
 </li>

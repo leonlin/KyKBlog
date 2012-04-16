@@ -1,7 +1,6 @@
 <%= provide(:title, 'New Post') %>
-<h1>Compose New Post</h1>
-
   <div class="span9">
+    <h1>Compose New Post</h1>
     <%= form_for(@post) do |f| %>
       <%= render 'shared/error_messages', object: f.object %>
 

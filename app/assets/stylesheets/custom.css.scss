@@ -199,6 +199,32 @@ input, textarea, select, .uneditable-input {
 }
 .content {
   display: block;
+  width: 660px;
+  font-size: 107%;
+  margin: 5px;
+  line-height: 130%;
+  p {
+    word-wrap: break-word;
+    clear: both;
+    margin-bottom: 1em;
+    line-height: 130%
+  }
+  code {
+    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    background-color: #EEE;
+    border-style: none;
+  }
+  pre {
+    padding: 5px;
+    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    margin-bottom: 10px;
+    background-color: #EEE;
+    overflow: auto;
+    width: auto;
+    width: 650px;
+    padding-bottom: 20px;
+    max-height: 600px;
+  }
 }
 .timestamp {
   color: $grayLight;
@@ -224,18 +250,18 @@ aside {
   }
 }
 
+h3{
+  display: block;
+  font-weight: bold;
+  font-size: 150%;
+  margin-bottom: 5px;
+  line-height: 1.3;
+  font-family: Trebuchet MS,Liberation Sans,DejaVu Sans,sans-serif;
+}
+
 .summary {
   width:550px;
   float: left;
-
-  h3{
-    display: block;
-    font-weight: bold;
-    font-size: 130%;
-    margin-bottom: 5px;
-    line-height: 1.3;
-    font-family: Trebuchet MS,Liberation Sans,DejaVu Sans,sans-serif;
-  }
   a {
     color: #07c;
     text-decoration: none;

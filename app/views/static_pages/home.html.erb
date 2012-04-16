@@ -3,10 +3,11 @@
   <div class="row">
     <aside class="span3">
     <section>
-    <%= render 'shared/user_info' %>
+    <%= render 'shared/user_info', user: current_user %>
     </section>
     <section>
-    <%= link_to "New Post", new_post_path %>
+    <%= link_to "New Post", new_post_path,
+	    class: "btn btn-large btn-primary" %>
     </aside>
     <div class="span9">
       <h3>Post Feed</h3>

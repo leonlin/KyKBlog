@@ -8,6 +8,7 @@ gem 'bootstrap-will_paginate'
 gem "friendly_id"
 gem 'wmd-rails'
 gem 'formatize'
+gem 'google-code-prettify-rails'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

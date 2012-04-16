@@ -13,4 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
+//= require google-code-prettify-rails/prettify
 //= require_tree .

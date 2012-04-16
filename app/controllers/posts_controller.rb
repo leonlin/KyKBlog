@@ -1,8 +1,9 @@
 class PostsController < ApplicationController
-  before_filter :signed_in_user, only: [:create, :destroy]
+  before_filter :signed_in_user, only: [:new, :create]
   before_filter :correct_user,   only: [:destroy, :edit, :update]
-  
-  def index
+
+  def show
+    @post = Post.find(params[:id])
   end
 
   def new
@@ -36,7 +37,7 @@ class PostsController < ApplicationController
       redirect_to current_user
     else
       render 'edit'
-    end 
+    end
   end
 
   private
