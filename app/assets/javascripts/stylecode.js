@@ -1,4 +1,4 @@
-$(function(){
-  $("pre").addClass("prettyprint");
-  alert("work");
+$(function() {
+$("pre").addClass("prettyprint");
+prettyPrint();
 })

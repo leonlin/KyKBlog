@@ -1,6 +1,7 @@
 //= require wmd/wmd
 //= require wmd/showdown
 
+/*
 $(function(){
 new WMDEditor({
   input: "post_content",
@@ -9,3 +10,4 @@ new WMDEditor({
   helpLink: "http://daringfireball.net/projects/markdown/syntax"
   });
 })
+*/

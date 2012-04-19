@@ -11,5 +11,5 @@
     title:   post.title %>
   <%= link_to "edit", edit_post_path(post) %>
 <% end %>
-<div class="content"><%= markdown(post.content) %></div>
+<div class="content"><%= markdown(post.content.html_safe) %></div>
 </li>

@@ -199,7 +199,7 @@ input, textarea, select, .uneditable-input {
 }
 .content {
   display: block;
-  width: 660px;
+  width: 620px;
   font-size: 107%;
   margin: 5px;
   line-height: 130%;
@@ -211,19 +211,20 @@ input, textarea, select, .uneditable-input {
   }
   code {
     font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-    background-color: #EEE;
+    //background-color: #EEE;
     border-style: none;
   }
+  
   pre {
-    padding: 5px;
-    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-    margin-bottom: 10px;
-    background-color: #EEE;
-    overflow: auto;
-    width: auto;
-    width: 650px;
-    padding-bottom: 20px;
-    max-height: 600px;
+  //  padding: 5px;
+  //  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  //  margin-bottom: 10px;
+  //  background-color: #EEE;
+  //  overflow: auto;
+  //  width: auto;
+  //  width: 650px;
+  //  padding-bottom: 20px;
+  //  max-height: 600px;
   }
 }
 .timestamp {
@@ -272,5 +273,14 @@ h3{
   }
   a:hover{
     text-decoration: underline;
+  }
+}
+
+#editor-preview{
+  border: solid 1px;
+  code {
+    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    //background-color: #EEE;
+    border-style: none;
   }
 }

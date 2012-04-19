@@ -1,18 +1,29 @@
 <%= provide(:title, 'Edit Post') %>
-<h1>Edit Post</h1>
 
-  <div class="span9">
-    <%= form_for(@post) do |f| %>
-      <%= render 'shared/error_messages', object: f.object %>
 
-      <%= f.label :title %>
-      <%= f.text_field :title %>
+<div class="span9">
+  <h1>Edit Post</h1>
+  <%= form_for(@post) do |f| %>
+    <%= render 'shared/error_messages', object: f.object %>
 
-      <%= f.label :content %>
-      <div id="editor-button-bar"></div>
-      <%= f.text_area :content %>
-      <div id="editor-preview"></div>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
 
-      <%= f.submit "Edit", class: "btn btn-large btn-primary" %>
-    <% end %>
+    <%= f.label :content %>
+    <div id="editor-button-bar"></div>
+    <%= f.text_area :content %>
+
+    <%= f.submit "Edit", class: "btn btn-large btn-primary" %>
+  <% end %>
 </div>
+
+<script type="text/javascript">
+  $(function(){
+      new WMDEditor({
+        input: "post_content",
+        button_bar: "editor-button-bar",
+        helpLink: "http://daringfireball.net/projects/markdown/syntax"
+      }); 
+    })  
+
+</script>
